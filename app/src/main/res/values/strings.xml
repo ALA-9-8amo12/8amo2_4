@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AmazighApp</string>
+    <string name="play">Speel</string>
+    <string name="practise">Oefen</string>
+    <string name="score">Score</string>
+    <string name="about_us">Over Ons</string>
 </resources>
