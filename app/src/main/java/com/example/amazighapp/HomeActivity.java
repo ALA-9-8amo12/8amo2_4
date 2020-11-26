@@ -2,6 +2,11 @@ package com.example.amazighapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.amazighapp.Play.*;
+import com.example.amazighapp.Practise.PractiseCategoryActivity;
+
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -32,17 +37,22 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch(view.getId()){
             case R.id.btnPlay:
-                // to do code
+                transitionToActivity(PlayCategoryActivity.class);
                 break;
             case R.id.btnScore:
-                // to do code
+                transitionToActivity(ScoreActivity.class);
                 break;
             case R.id.btnPractise:
-                // to do code
+                transitionToActivity(PractiseCategoryActivity.class);
                 break;
             case R.id.btnAboutUs:
-                // to do code
+                transitionToActivity(AboutUsActivity.class);
                 break;
         }
+    }
+
+    private void transitionToActivity(Class activity) {
+        Intent intent = new Intent(this, activity);
+        startActivity(intent);
     }
 }
