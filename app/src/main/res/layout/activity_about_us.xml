@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
     tools:context=".AboutUsActivity">
+
+    <TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="serif"
+    android:gravity="center"
+    android:text="Over ons"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.182"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="0dp" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="318dp"
+    android:layout_height="374dp"
+    android:background="@drawable/textview_border"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.494"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.75"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/tvLastText"
+    android:layout_width="291dp"
+    android:layout_height="246dp"
+    android:fontFamily="serif"
+    android:gravity="center"
+    android:text="Deze app is ontwikkelt door Monkeybusiness. Wij programmeren apps en websites en zijn gevraagd om een amazigh app te maken voor jongeren om meer te leren over de amazigh taal."
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.585"
+    tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
